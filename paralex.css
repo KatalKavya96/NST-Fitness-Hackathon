@@ -1,0 +1,99 @@
+/* Parallax Section */
+.parallax {
+    position: relative;
+    height: 200vh; /* Full viewport height */
+    background: url('Images/limitless.webp') no-repeat center center/cover; /* Replace with your image */
+    background-attachment: fixed; /* Creates the parallax scrolling effect */
+    overflow: hidden;
+}
+
+.parallax-text {
+    position: fixed; /* Text remains fixed during the parallax section */
+    top: 50%; /* Vertically centered */
+    left: 50%; /* Horizontally centered */
+    transform: translate(-50%, -50%) scale(0.8); /* Initial zoomed-out state */
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+    text-align: center;
+    z-index: 2;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Ensure it's not interactive */
+    transition: transform 0.1s linear, opacity 0.1s linear; /* Smooth transitions */
+}
+
+/* Content Section Below Parallax */
+.content {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+
+
+
+
+
+/* PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2 PARALEX 2  */
+
+/* Parallax Container */
+.parallax-container {
+    position: relative;
+    height: 120vh; /* Full viewport height */
+    overflow: hidden;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Enables the parallax effect */
+    background-position: center;
+    z-index: 0;
+}
+
+/* Content inside Parallax */
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; /* Ensure content is above the background */
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Parallax Text Enhancements */
+.parallax-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.parallax-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Content Section */
+.content-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+

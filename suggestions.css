@@ -1,0 +1,44 @@
+/* Related Searches Section */
+#related-searches-section {
+    background-color: #111; /* Dark background for contrast */
+    padding: 20px 20px 0px 20px;
+    text-align: left;
+}
+
+/* Header for the Section */
+.related-searches-header {
+    margin-bottom: 10px;
+}
+
+.related-searches-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Links Container */
+.related-searches-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    gap: 15px; /* Spacing between links */
+}
+
+/* Individual Search Link Item */
+.related-search-item {
+    flex: 0 1 calc(20% - 15px); /* Flexible sizing with spacing */
+    min-width: 120px;
+}
+
+/* Link Styling */
+.search-link {
+    color: #aaa; /* Light gray text for links */
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.search-link:hover {
+    color: #fff; /* Highlight link on hover */
+    text-decoration: underline;
+}

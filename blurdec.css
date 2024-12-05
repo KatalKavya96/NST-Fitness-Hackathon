@@ -1,0 +1,79 @@
+/* Carousel Section */
+.membership-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Full width of the page */
+    max-width: 100%; /* Remove max-width limitation */
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Carousel Track */
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out; /* Faster transition */
+    will-change: transform;
+}
+
+/* Carousel Card */
+.carousel-card {
+    flex: 0 0 48%; /* Two cards visible at a time */
+    max-width: 48%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.carousel-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Content */
+.carousel-content {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.carousel-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-content ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-card {
+        flex: 0 0 90%; /* Show one card at a time on smaller screens */
+        max-width: 90%;
+    }
+}
